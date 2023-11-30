@@ -33,27 +33,27 @@
 # # #     return render(request, 'index.html')
 
 
-# # from textblob import TextBlob
+# from textblob import TextBlob
 
-# # def analyze_sentiment(text):
-# #     # Create a TextBlob object
-# #     blob = TextBlob(text)
+# def analyze_sentiment(text):
+#     # Create a TextBlob object
+#     blob = TextBlob(text)
 
-# #     # Get sentiment polarity (ranges from -1 to 1, where negative values indicate negative sentiment)
-# #     sentiment_score = blob.sentiment.polarity
+#     # Get sentiment polarity (ranges from -1 to 1, where negative values indicate negative sentiment)
+#     sentiment_score = blob.sentiment.polarity
 
-# #     # Classify sentiment based on the score
-# #     if sentiment_score > 0:
-# #         return 'Positive'
-# #     elif sentiment_score < 0:
-# #         return 'Negative'
-# #     else:
-# #         return 'Neutral'
+#     # Classify sentiment based on the score
+#     if sentiment_score > 0:
+#         return 'Positive'
+#     elif sentiment_score < 0:
+#         return 'Negative'
+#     else:
+#         return 'Neutral'
 
-# # # Example usage
-# # user_input = "you saddist"
-# # result = analyze_sentiment(user_input)
-# # print(result)
+# # Example usage
+# user_input = "you saddist"
+# result = analyze_sentiment(user_input)
+# print(result)
 
 # from sklearn.feature_extraction.text import TfidfVectorizer
 # from sklearn.model_selection import train_test_split

@@ -19,11 +19,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
-from mlapp.views import index
+from mlapp.views import index,AddData,EmployeeListView
 urlpatterns = [
 
     path('admin/', admin.site.urls),
-    path('home', index)
+    path('home', index),
+    path('add_data',AddData),
+    path('user_data',EmployeeListView.as_view())
+
 
 
 ]
