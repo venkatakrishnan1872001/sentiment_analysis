@@ -1,0 +1,25 @@
+<!-- your_template.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- other head content... -->
+</head>
+
+<body>
+
+    <h1>Your Model Image</h1>
+
+    {% if empinstance.image %}
+    <!-- Render the image if it exists -->
+    <img src="{{ empinstance.image.url }}" alt="Your Model Image">
+    {% else %}
+    <!-- Render a default image or a placeholder if the image doesn't exist -->
+    <p>No image available</p>
+    {% endif %}
+
+    <!-- other body content... -->
+
+</body>
+
+</html>

@@ -62,3 +62,12 @@ class EmployeeListView(ListAPIView):
     serializer_class = EmployeeSerializer
     pagination_class = MyCustomPagination
 
+
+
+# views.py
+from django.shortcuts import render
+from .models import Employee
+
+def test_view(request):
+    empinstance = Employee.objects.get(id=61)
+    return render(request, 'test.html', {'empinstance': empinstance})
